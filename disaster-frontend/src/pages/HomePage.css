@@ -1,0 +1,15 @@
+.safe-city-animation {
+    font-size: 2rem;
+    font-weight: bold;
+    color: green;
+    animation: moveLeftToRight 5s linear infinite;
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
