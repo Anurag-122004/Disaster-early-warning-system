@@ -51,7 +51,7 @@ const HomePage = () => {
     return (
         <div className="min-h-screen bg-gray-100 flex flex-col items-center py-8">
             <h1 className="text-3xl font-bold text-blue-600 mb-6 text-center">
-                Disaster Early Warning System
+                Smart Disaster Early Warning System
             </h1>
 
             {/* Search section */}
