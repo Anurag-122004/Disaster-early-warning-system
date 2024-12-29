@@ -93,9 +93,9 @@ const HomePage = () => {
                             key={`${disaster.disasterNumber}-${disaster.declarationDate}-${index}`}
                             className="group bg-gradient-to-r from-blue-100 to-blue-200 p-6 shadow-md rounded-md transition-transform transform hover:scale-105 hover:shadow-lg"
                         >
-                            <h2 className="text-xl font-semibold text-gray-800 mb-2">
-                                {disaster.title}
-                            </h2>
+                            <h1 className="text-xl font-semibold text-gray-800 mb-2">
+                            <strong>Disaster No:</strong> {disaster.disasterNumber}
+                            </h1>
                             <p className="text-gray-700">
                                 <strong>Type:</strong> {disaster.incidentType}
                             </p>
@@ -105,6 +105,18 @@ const HomePage = () => {
                             <p className="text-gray-700">
                                 <strong>Date:</strong>{' '}
                                 {new Date(disaster.declarationDate).toLocaleDateString()}
+                            </p>
+                            <p className="text-gray-700">
+                                <strong>Declaration Title:</strong> {disaster.declarationTitle}
+                            </p>
+                            <p className="text-gray-700">
+                                <strong>Place Code:</strong> {disaster.placeCode}
+                            </p>
+                            <p className="text-gray-700">
+                                    <strong>Designated Area:</strong> {disaster.designatedArea}
+                            </p>
+                            <p className="text-gray-700">
+                                <strong>Region:</strong> {disaster.region}
                             </p>
                         </div>
                     ))}
